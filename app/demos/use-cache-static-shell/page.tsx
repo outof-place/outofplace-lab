@@ -28,8 +28,8 @@ export default function Page() {
             <RequestStamp />
           </Suspense>
           <p className="note">
-            connection() waits for a real request. The static shell carries the fallback; this time streams in after
-            it.
+            <code>connection()</code> waits for a real request. The static shell carries the fallback; this time
+            streams in after it.
           </p>
         </section>
       </div>

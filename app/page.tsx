@@ -37,8 +37,8 @@ export default function LabIndex() {
       <section className="lead">
         <h1>Live examples for the posts on outofplace.space</h1>
         <p>
-          Every tutorial on our blog stands on a demo that runs here. The code in the post is the code below, and
-          each demo has a test that checks what the post claims.
+          Every tutorial on our blog stands on a demo that runs here. The code in a post is the code that runs on
+          its demo page, and each demo has a test that checks what the post claims.
         </p>
       </section>
 
