@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "demos": [
+    {
+      "slug": "use-cache-static-shell",
+      "title": "use cache and the static shell",
+      "summary": "One page, two timestamps: a component cached with 'use cache' is prerendered into the static shell at build time, while one behind connection() and Suspense renders on every request.",
+      "files": [
+        "app/demos/use-cache-static-shell/page.tsx",
+        "app/demos/use-cache-static-shell/stamps.tsx"
+      ],
+      "test": "app/demos/use-cache-static-shell/demo.spec.ts",
+      "next": "16.4.0",
+      "post": null,
+      "created": "2026-10-14",
+      "updated": "2026-10-14"
+    }
+  ]
+}

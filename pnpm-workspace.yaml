@@ -1,0 +1,7 @@
+# Supply-chain policy, same as outofplace-site: a release resolves only once it is a day old,
+# and never when it was published with weaker evidence than an earlier version.
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade
+
+allowBuilds:
+  sharp: true

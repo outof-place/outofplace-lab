@@ -1,0 +1,306 @@
+/*
+ * The lab's whole stylesheet. Tokens follow outofplace.space (styles/theme.css there): the
+ * black canvas, one warm ink, hairlines instead of borders. Type is the system stack, because
+ * the site's faces are licensed and this repo is public. No animation.
+ */
+
+:root {
+  --canvas: oklch(0 0 0);
+  --ink: oklch(0.958 0.004 91);
+  --ink-2: oklch(0.958 0.004 91 / 0.64);
+  --ink-3: oklch(0.958 0.004 91 / 0.54);
+  --hairline: oklch(1 0 0 / 0.09);
+  --hairline-strong: oklch(1 0 0 / 0.14);
+  --fill: oklch(1 0 0 / 0.07);
+  --surface: oklch(1 0 0 / 0.05);
+  --raised: oklch(0.19 0.004 91);
+  --good: oklch(0.72 0.15 150);
+  --live: oklch(0.8 0.14 80);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-item: 13px;
+  --radius-card: 16px;
+  --gutter: 16px;
+  --measure: 46rem;
+
+  color-scheme: dark;
+}
+
+@media (width >= 768px) {
+  :root {
+    --gutter: 40px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--ink-3);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+code,
+time {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+.mark {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: var(--ink);
+}
+
+/* ── Index ─────────────────────────────────────────────────────────── */
+
+.page {
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 32px var(--gutter) 64px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.top-links {
+  display: flex;
+  gap: 20px;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+.lead h1 {
+  font-size: clamp(32px, 6vw, 48px);
+}
+
+.lead p {
+  margin-top: 16px;
+  color: var(--ink-2);
+  font-size: 18px;
+  max-width: 36rem;
+}
+
+.demo-list {
+  list-style: none;
+  margin: 48px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.demo-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.demo-item h2 {
+  font-size: 22px;
+}
+
+.demo-item h2 a {
+  text-decoration: none;
+}
+
+.demo-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.demo-item p {
+  margin-top: 8px;
+  color: var(--ink-2);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 12px;
+  color: var(--ink-3);
+  font-size: 14px;
+}
+
+.empty {
+  margin-top: 48px;
+  color: var(--ink-2);
+}
+
+.foot {
+  margin-top: 64px;
+  color: var(--ink-3);
+  font-size: 14px;
+}
+
+/* ── Demo shell ────────────────────────────────────────────────────── */
+
+.shell-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 12px var(--gutter);
+  border-bottom: 1px solid var(--hairline);
+  font-size: 14px;
+}
+
+.shell-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.shell-home .mark {
+  width: 20px;
+  height: 20px;
+}
+
+.shell-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  color: var(--ink-2);
+}
+
+.shell-version {
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.demo {
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 32px var(--gutter) 48px;
+}
+
+.demo-title {
+  font-size: clamp(26px, 5vw, 36px);
+  margin-bottom: 24px;
+}
+
+/* Shared pieces a demo may use, so its own files stay about the feature. */
+
+.demo-lead {
+  color: var(--ink-2);
+  max-width: 38rem;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+@media (width >= 640px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  padding: 20px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card .stamp {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.card .note {
+  margin-top: 12px;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+.card .pending {
+  margin-top: 16px;
+  font-size: 20px;
+  color: var(--ink-3);
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--fill);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.hint {
+  margin-top: 24px;
+  color: var(--ink-3);
+  font-size: 15px;
+}
