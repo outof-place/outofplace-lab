@@ -1,0 +1,112 @@
+/* Single column, small rows: the four numbers and the buttons fit a 360x480 phone frame. */
+
+.metrics {
+  border-top: 1px solid var(--hairline);
+}
+
+.metric {
+  display: grid;
+  /* A fixed column for the label: when "good" turns into "needs improvement", a column that
+     grew with its text would move its neighbours, and that move is a layout shift itself. */
+  grid-template-columns: 3.5rem 1fr 8.5rem;
+  align-items: center;
+  gap: 12px;
+  height: 34px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.name {
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+}
+
+.rating {
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
+.rating[data-rating="good"] {
+  color: var(--good);
+}
+
+.rating[data-rating="needs improvement"] {
+  color: var(--live);
+}
+
+.rating[data-rating="poor"] {
+  color: oklch(0.7 0.18 25);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.actions button,
+.actions a {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--fill);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.actions button:disabled {
+  color: var(--ink-3);
+  cursor: default;
+}
+
+.banner {
+  display: grid;
+  place-items: center;
+  height: 160px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--raised);
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.hero {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 12px var(--gutter);
+  background: var(--raised);
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.notes {
+  margin-top: 48px;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+.notes h2 {
+  color: var(--ink);
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.notes p + p {
+  margin-top: 8px;
+}

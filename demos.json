@@ -14,6 +14,21 @@
       "post": null,
       "created": "2026-10-14",
       "updated": "2026-10-14"
+    },
+    {
+      "slug": "measure-page-speed-in-browser",
+      "title": "Measure page speed",
+      "summary": "TTFB, LCP, CLS and load time read from the browser's own Performance APIs on this page, with a late banner that raises CLS and a late hero that moves LCP.",
+      "files": [
+        "app/demos/measure-page-speed-in-browser/vitals.ts",
+        "app/demos/measure-page-speed-in-browser/speed-report.tsx",
+        "app/demos/measure-page-speed-in-browser/page.tsx"
+      ],
+      "test": "app/demos/measure-page-speed-in-browser/demo.spec.ts",
+      "next": "16.4.0",
+      "post": "https://www.outofplace.space/blog/measure-page-speed-in-browser",
+      "created": "2026-10-19",
+      "updated": "2026-10-19"
     }
   ]
 }
