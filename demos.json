@@ -29,6 +29,21 @@
       "post": "https://www.outofplace.space/blog/measure-page-speed-in-browser",
       "created": "2026-10-19",
       "updated": "2026-10-19"
+    },
+    {
+      "slug": "nextjs-use-cache",
+      "title": "use cache: keys, lifetime and updateTag",
+      "summary": "Two cities, one cached function: 'use cache' keys the entry by its argument, cacheLife('hours') keeps it, and updateTag in a Server Action clears just one city.",
+      "files": [
+        "app/demos/nextjs-use-cache/get-stamp.ts",
+        "app/demos/nextjs-use-cache/actions.ts",
+        "app/demos/nextjs-use-cache/page.tsx"
+      ],
+      "test": "app/demos/nextjs-use-cache/demo.spec.ts",
+      "next": "16.4.0",
+      "post": "https://www.outofplace.space/blog/nextjs-use-cache",
+      "created": "2026-10-19",
+      "updated": "2026-10-19"
     }
   ]
 }
