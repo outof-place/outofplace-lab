@@ -44,6 +44,22 @@
       "post": "https://www.outofplace.space/blog/nextjs-use-cache",
       "created": "2026-10-19",
       "updated": "2026-10-19"
+    },
+    {
+      "slug": "react-server-components-explained",
+      "title": "What reaches the browser",
+      "summary": "A Server Component that signs a value with a key that never leaves the server, next to a use client counter that holds a Server Component as children: click, reload, and see which part runs where.",
+      "files": [
+        "app/demos/react-server-components-explained/page.tsx",
+        "app/demos/react-server-components-explained/server-card.tsx",
+        "app/demos/react-server-components-explained/signing.ts",
+        "app/demos/react-server-components-explained/counter.tsx"
+      ],
+      "test": "app/demos/react-server-components-explained/demo.spec.ts",
+      "next": "16.4.0",
+      "post": "https://www.outofplace.space/blog/react-server-components-explained",
+      "created": "2026-10-23",
+      "updated": "2026-10-23"
     }
   ]
 }

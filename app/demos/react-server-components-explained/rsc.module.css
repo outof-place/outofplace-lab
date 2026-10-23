@@ -1,0 +1,81 @@
+/* Two small cards stacked, three rows each: both fit a 360x480 phone frame under the title. */
+
+.stack {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  padding: 10px 14px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.card h2 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.rows {
+  margin: 0;
+}
+
+.rows > div {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  border-top: 1px solid var(--hairline);
+  font-size: 14px;
+}
+
+.rows dt {
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.rows dd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+}
+
+.rows output {
+  min-width: 2ch;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.rows button {
+  height: 26px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--fill);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Same height as the server card, so nothing moves when it streams in. */
+.pending {
+  display: grid;
+  place-items: center;
+  height: 129px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  color: var(--ink-3);
+  font-size: 14px;
+}
+
+.hint {
+  margin-top: 6px;
+  color: var(--ink-3);
+  font-size: 14px;
+}
