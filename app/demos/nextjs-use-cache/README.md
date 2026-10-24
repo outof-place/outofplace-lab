@@ -2,7 +2,7 @@
 
 What it shows: one cached function, `getStamp(city)`, marked `'use cache'` with `cacheLife('hours')` and a `cacheTag` per city, returns an id and a time made inside its body. Its entry is keyed by the argument: both rows that call `getStamp("gdansk")` show one id, `getStamp("krakow")` shows another, and reloading keeps both while the uncached row (behind `connection()`) changes on every load. "Clear" calls a Server Action that runs `updateTag` for that city's tag: that city gets a new id and the other keeps its own.
 
-Next.js version: 16.4.0
+Next.js version: 16.4.3
 
 - Live: https://lab.outofplace.space/demos/nextjs-use-cache
 - Test: [`demo.spec.ts`](./demo.spec.ts)

@@ -2,7 +2,7 @@
 
 What it shows: a React Server Component and a Client Component on one Next.js page, and what each one sends to the browser. The Server Component (async, no directive) signs the request time with an HMAC key from a module marked `import "server-only"`; the browser gets the time and the signature as HTML and in the RSC payload, never the key or the component's code. The Client Component (`"use client"`) is a counter: it renders to HTML on the server, hydrates in the browser, and its code ships as JavaScript. A Server Component passed to it as `children` still renders on the server. Clicking Add one changes only the count, with no request; a reload makes the server sign a new time.
 
-Next.js version: 16.4.0
+Next.js version: 16.4.3
 
 - Live: https://lab.outofplace.space/demos/react-server-components-explained
 - Test: [`demo.spec.ts`](./demo.spec.ts)

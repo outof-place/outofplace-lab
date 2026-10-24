@@ -4,12 +4,13 @@ Live examples for the posts on [outofplace.space](https://www.outofplace.space/b
 
 One demo per post. The code a post shows is taken from the demo, so the code in the post is the code that runs here, and every demo has a Playwright test that checks what the post claims.
 
-- Next.js 16.4.0, React 19.3, `cacheComponents` and `partialPrefetching` on (see `next.config.ts`). No other global flags: a demo that needs one does not belong in this app.
+- Next.js 16.4.3, React 19.3.1, `cacheComponents` and `partialPrefetching` on (see `next.config.ts`). No other global flags: a demo that needs one does not belong in this app.
 - Vercel project `outofplace-lab` (team OUTOFPLACE). A push to `main` deploys production.
 
 ## Rules for every demo
 
 - No secrets, no paid API calls, no user data. AI demos show recorded runs, never live calls.
+- The AI SDK (`ai`, `@ai-sdk/react`) is installed for those recorded runs: a demo drives it with `MockLanguageModelV4` and `simulateReadableStream` from `ai/test`, never a provider.
 - The files a post shows are listed in `demos.json` and contain only demo code. Lab chrome (title bar, links, noindex) lives in the demo's `layout.tsx`, which a post never shows.
 - The test asserts the post's claims, one test per claim, and fails when a claim stops being true.
 
