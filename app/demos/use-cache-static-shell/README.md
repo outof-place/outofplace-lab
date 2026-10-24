@@ -2,7 +2,7 @@
 
 What it shows: with Cache Components on, one page mixes two kinds of rendering. A component marked `'use cache'` runs once while the page is prerendered at build time, and its output ships in the static shell, so its timestamp is the same on every load. A component that awaits `connection()` inside `<Suspense>` is left out of the shell: the shell carries its fallback, and the component renders on every request and streams in, so its timestamp is new each time.
 
-Next.js version: 16.4.0
+Next.js version: 16.4.3
 
 - Live: https://lab.outofplace.space/demos/use-cache-static-shell
 - Test: [`demo.spec.ts`](./demo.spec.ts)

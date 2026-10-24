@@ -10,10 +10,10 @@
         "app/demos/use-cache-static-shell/stamps.tsx"
       ],
       "test": "app/demos/use-cache-static-shell/demo.spec.ts",
-      "next": "16.4.0",
+      "next": "16.4.3",
       "post": null,
       "created": "2026-10-14",
-      "updated": "2026-10-14"
+      "updated": "2026-10-24"
     },
     {
       "slug": "measure-page-speed-in-browser",
@@ -25,10 +25,10 @@
         "app/demos/measure-page-speed-in-browser/page.tsx"
       ],
       "test": "app/demos/measure-page-speed-in-browser/demo.spec.ts",
-      "next": "16.4.0",
+      "next": "16.4.3",
       "post": "https://www.outofplace.space/blog/measure-page-speed-in-browser",
       "created": "2026-10-19",
-      "updated": "2026-10-19"
+      "updated": "2026-10-24"
     },
     {
       "slug": "nextjs-use-cache",
@@ -40,10 +40,10 @@
         "app/demos/nextjs-use-cache/page.tsx"
       ],
       "test": "app/demos/nextjs-use-cache/demo.spec.ts",
-      "next": "16.4.0",
+      "next": "16.4.3",
       "post": "https://www.outofplace.space/blog/nextjs-use-cache",
       "created": "2026-10-19",
-      "updated": "2026-10-19"
+      "updated": "2026-10-24"
     },
     {
       "slug": "react-server-components-explained",
@@ -56,10 +56,10 @@
         "app/demos/react-server-components-explained/counter.tsx"
       ],
       "test": "app/demos/react-server-components-explained/demo.spec.ts",
-      "next": "16.4.0",
+      "next": "16.4.3",
       "post": "https://www.outofplace.space/blog/react-server-components-explained",
       "created": "2026-10-23",
-      "updated": "2026-10-23"
+      "updated": "2026-10-24"
     }
   ]
 }

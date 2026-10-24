@@ -2,7 +2,7 @@
 
 What it shows: a page that measures its own speed with the browser's Performance APIs and no library. TTFB and load time come from the navigation entry (`responseStart`, and `loadEventEnd` read after the load event); LCP and CLS come from `PerformanceObserver` with `type` and `buffered: true`. Each number gets web.dev's good, needs improvement or poor label (load time has no threshold). Two controls change the result: **Insert banner** puts a 160 px banner above the numbers 1 s after the click, with no space kept for it, and CLS rises above 0.1; **Late hero** reloads the page with `?late`, a big text block paints 3 s after the navigation started, and LCP moves past 3 s. **Reset** loads the page again.
 
-Next.js version: 16.4.0
+Next.js version: 16.4.3
 
 - Live: https://lab.outofplace.space/demos/measure-page-speed-in-browser
 - Test: [`demo.spec.ts`](./demo.spec.ts)
