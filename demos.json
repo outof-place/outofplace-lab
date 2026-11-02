@@ -60,6 +60,22 @@
       "post": "https://www.outofplace.space/blog/react-server-components-explained",
       "created": "2026-10-23",
       "updated": "2026-10-24"
+    },
+    {
+      "slug": "vercel-ai-sdk-usechat-streaming",
+      "title": "useChat, no API key",
+      "summary": "A chat built on useChat from @ai-sdk/react and a Next.js route handler that streams a canned reply through streamText and a mock model: watch status go submitted, streaming, ready while the reply grows from text parts.",
+      "files": [
+        "app/demos/vercel-ai-sdk-usechat-streaming/chat.tsx",
+        "app/demos/vercel-ai-sdk-usechat-streaming/api/chat/route.ts",
+        "app/demos/vercel-ai-sdk-usechat-streaming/canned-model.ts",
+        "app/demos/vercel-ai-sdk-usechat-streaming/page.tsx"
+      ],
+      "test": "app/demos/vercel-ai-sdk-usechat-streaming/demo.spec.ts",
+      "next": "16.4.3",
+      "post": "https://www.outofplace.space/blog/vercel-ai-sdk-usechat-streaming",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
     }
   ]
 }
