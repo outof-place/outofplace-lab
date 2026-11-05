@@ -76,6 +76,22 @@
       "post": "https://www.outofplace.space/blog/vercel-ai-sdk-usechat-streaming",
       "created": "2026-11-02",
       "updated": "2026-11-02"
+    },
+    {
+      "slug": "react-19",
+      "title": "React 19 Actions in Next.js",
+      "summary": "One form on React 19 Actions: useOptimistic shows the note at once, useFormStatus disables the button, useActionState keeps the Server Function's answer, and the page shows which React build the App Router runs.",
+      "files": [
+        "app/demos/react-19/notes.tsx",
+        "app/demos/react-19/actions.ts",
+        "app/demos/react-19/page.tsx",
+        "app/demos/react-19/browser-version.tsx"
+      ],
+      "test": "app/demos/react-19/demo.spec.ts",
+      "next": "16.4.3",
+      "post": "https://www.outofplace.space/blog/react-19",
+      "created": "2026-11-05",
+      "updated": "2026-11-05"
     }
   ]
 }

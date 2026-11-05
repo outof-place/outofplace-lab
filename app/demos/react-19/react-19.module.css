@@ -1,0 +1,108 @@
+/* Compact, stacked: the versions, the form and the newest notes fit a 360x480 phone frame. */
+
+.versions {
+  display: grid;
+  gap: 2px;
+  margin: 0 0 16px;
+  font-size: 13px;
+}
+
+.versions div {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 8px;
+}
+
+.versions dt {
+  color: var(--ink-3);
+}
+
+.versions dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  overflow-wrap: anywhere;
+}
+
+.notes {
+  display: grid;
+  gap: 10px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.form input {
+  min-width: 0;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: var(--radius-item);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+  color: var(--ink);
+  font: inherit;
+}
+
+.form button {
+  min-width: 84px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--canvas);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  background: var(--fill);
+  color: var(--ink-2);
+  cursor: default;
+}
+
+.error {
+  color: var(--live);
+  font-size: 14px;
+}
+
+.list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: var(--radius-item);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.list li span {
+  overflow-wrap: anywhere;
+}
+
+.list time,
+.list em {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-style: normal;
+}
+
+.list time {
+  color: var(--good);
+}
+
+.list em {
+  color: var(--live);
+}
